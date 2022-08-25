@@ -21,11 +21,15 @@ cloud-devops
    12  systemctl status docker
 
 
-==>  By default only the root user can connect to the docker daemon by cli. If u want any other user to run docker commands then u need to add the user into the docker group 
+==>  By default only the root user can connect to the docker daemon by cli. 
+If u want any other user to run docker commands then u need to add the user into the docker group 
 
 vagrant@ubuntu-bionic:~$ whoami
+
 vagrant
+
 vagrant@ubuntu-bionic:~$ docker images
+
 Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/images/json": dial unix /var/run/docker.sock: connect: permission denied
 
     1  whoami
