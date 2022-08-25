@@ -3,7 +3,7 @@ cloud-devops
 
 **DOCKER:**
 
-================================================================================================================================================================== 
+============================================================================================ 
 **Docker installation commands :**
 
 	  1  sudo apt-get update
@@ -83,7 +83,7 @@ Using default tag: latest
 Error response from daemon: Get "https://registry-1.docker.io/v2/": dial tcp: lookup registry-1.docker.io: Temporary failure in name resolution
 
 
-		sudo nano /etc/resolv.conf
+   44  sudo nano /etc/resolv.conf
    45  sudo systemctl daemon-reload
    46  sudo systemctl restart docker
    47  docker pull hello-world
