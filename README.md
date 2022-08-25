@@ -90,6 +90,13 @@ root@ubuntu-bionic:~# docker pull hello-world
 Using default tag: latest
 Error response from daemon: Get "https://registry-1.docker.io/v2/": dial tcp: lookup registry-1.docker.io: Temporary failure in name resolution
 
+1. Open config file sudo nano /etc/resolv.conf and add the following under existing nameservers
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+
+2. run following commands to restart daemon and docker service
+sudo systemctl daemon-reload
+sudo systemctl restart docker
 
    44  sudo nano /etc/resolv.conf
    45  sudo systemctl daemon-reload
